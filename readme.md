@@ -25,3 +25,12 @@ git commit -m "Описание"
 2. Создать **ssh-ключи**, __репозиторий__, 
 привязать удалённый репозиторий git remote add origin git@github.com:%ИМЯ_АККАУНТА%/
 %ИМЯ_ПРОЕКТА%, сделать **push** в удалённый репозиторий в нужную ветку.
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged -- "commit" --> tracked/commited;
+  some -- "???"           --> other;
+%% стрелка без текста
+  A --> B;
+```
